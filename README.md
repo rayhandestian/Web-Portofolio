@@ -1,3 +1,4 @@
 # Web-Portofolio
 
-Vercel Link: https://webportofolio-rayhandestian.vercel.app/
+Vercel Link: https://portofolio.rayhandestian.my.id/
+or https://webportofolio-rayhandestian.vercel.app/

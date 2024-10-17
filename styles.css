@@ -251,6 +251,36 @@ main {
     outline: none;
 }
 
+#contact select {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%233a4b5c"><path d="M2 4l4 4 4-4"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#contact select:focus {
+    border-color: #5a9bd5;
+    outline: none;
+}
+
+#contact select:hover {
+    border-color: #5a9bd5;
+}
+
+#contact .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 #contact button {
     padding: 10px 18px;
     background-color: #5a9bd5;

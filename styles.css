@@ -52,12 +52,6 @@ header h1 {
     color: #3a4b5c;
 }
 
-header .subtitle {
-    font-size: 1em;
-    color: #6b7c85;
-    margin-bottom: 15px;
-}
-
 nav {
     margin-top: 15px;
     text-align: center;
@@ -136,6 +130,12 @@ main {
 
 .card li strong {
     color: #4a6d82;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #6b7c85;
+    margin-bottom: 15px;
 }
 
 /* =======================
@@ -219,6 +219,53 @@ main {
 .skills img:focus {
     transform: scale(1.08);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================
+   Contact Section
+   ======================= */
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact label {
+    font-weight: bold;
+    color: #3a4b5c;
+}
+
+#contact input,
+#contact textarea {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #5a9bd5;
+    outline: none;
+}
+
+#contact button {
+    padding: 10px 18px;
+    background-color: #5a9bd5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact button:hover,
+#contact button:focus {
+    background-color: #4a8acb;
+    transform: translateY(-1px);
 }
 
 /* =======================

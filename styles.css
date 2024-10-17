@@ -1,0 +1,317 @@
+/* =======================
+   Global Styles
+   ======================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #444;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+a {
+    color: #5a9bd5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #4a8acb;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =======================
+   Header Section
+   ======================= */
+
+header {
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    color: #3a4b5c;
+}
+
+header .subtitle {
+    font-size: 1em;
+    color: #6b7c85;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    font-size: 0.95em;
+    position: relative;
+    padding: 4px 0;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #5a9bd5;
+    transition: width 0.3s;
+    margin-top: 4px;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+/* =======================
+   Main Content Sections
+   ======================= */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #3a4b5c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card ul,
+.card ol {
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+.card li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card li strong {
+    color: #4a6d82;
+}
+
+/* =======================
+   Profile Section
+   ======================= */
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.04);
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-media li a {
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #3a4b5c;
+    transition: color 0.3s ease;
+}
+
+.social-media li a:hover,
+.social-media li a:focus {
+    color: #5a9bd5;
+}
+
+/* =======================
+   Tech Stack Section
+   ======================= */
+
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tech-category h3 {
+    margin-bottom: 12px;
+    color: #3a4b5c;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills img {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills img:hover,
+.skills img:focus {
+    transform: scale(1.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================
+   Footer Section
+   ======================= */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #6b7c85;
+    position: relative;
+}
+
+.footer-social {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #6b7c85;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    color: #5a9bd5;
+}
+
+/* =======================
+   Responsive
+   ======================= */
+
+@media (max-width: 992px) {
+    .profile-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .subtitle {
+        font-size: 0.95em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .tech-stack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .skills img {
+        height: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .skills img {
+        height: 20px;
+    }
+
+    .bonus-gif {
+        width: 100%;
+    }
+}
+
+/* =======================
+   Icon Styles
+   ======================= */
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}

@@ -1,191 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayhan Destian | Portofolio</title>
-    <link rel="icon" href="assets/images/cat.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <header>
-        <h1>Hi there, I'm Rayhan 👋</h1>
-        <nav aria-label="Main Navigation">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Tech Stack</a></li>
-                <li><a href="#contact">Contact</a></li>
+   <head>
+      <meta charset="UTF-8">      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rayhan Destian | Portfolio</title>
+      <link rel="icon" href="assets/images/cat.png" type="image/png">
+      <!-- Tailwind CSS -->
+      <link href="./output.css" rel="stylesheet">
+   </head>
+   <body class="bg-gray-100 text-gray-700 font-sans leading-relaxed px-4 py-4 sm:px-6 lg:px-8">
+      <!-- Header Section -->
+      <header class="text-center p-10 bg-white rounded-lg shadow-md mb-8">
+         <h1 class="text-3xl font-semibold mb-2 text-gray-800">Hi there, I'm Rayhan 👋</h1>
+         <nav aria-label="Main Navigation" class="mt-4">
+            <ul class="flex justify-center gap-8">
+               <li>
+                  <a href="#about" class="text-base border-b-2 border-transparent hover:border-blue-500 transition-colors duration-300">
+                  About
+                  </a>
+               </li>
+               <li>
+                  <a href="#skills" class="text-base border-b-2 border-transparent hover:border-blue-500 transition-colors duration-300">
+                  Tech Stack
+                  </a>
+               </li>
+               <li>
+                  <a href="#contact" class="text-base border-b-2 border-transparent hover:border-blue-500 transition-colors duration-300">
+                  Contact
+                  </a>
+               </li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about" class="card">
-            <div class="profile-section">
-                <img src="assets/images/rayhan.jpg" alt="Rayhan Destian's Profile Picture" class="profile-pic">
-                <p class="subtitle">👨‍💻 Computer Science Student | Aspiring Game Developer | AI & Cyber Security Enthusiast</p>
-                <div class="social-media">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/rayhandestian" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <!-- GitHub SVG Icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                                    <path fill="#000000" d="M12,0.5C5.73,0.5,0.5,5.73,0.5,12c0,5.08,3.29,9.39,7.86,10.93c0.58,0.11,0.79-0.25,0.79-0.56c0-0.28-0.01-1.02-0.02-2.0c-3.19,0.7-3.87-1.54-3.87-1.54c-0.52-1.32-1.27-1.67-1.27-1.67c-1.04-0.71,0.08-0.7,0.08-0.7c1.15,0.08,1.75,1.18,1.75,1.18c1.02,1.75,2.68,1.24,3.33,0.95c0.1-0.74,0.4-1.24,0.73-1.53c-2.55-0.29-5.23-1.28-5.23-5.71c0-1.26,0.45-2.29,1.18-3.09c-0.12-0.29-0.51-1.46,0.11-3.04c0,0,0.96-0.31,3.15,1.18c0.91-0.26,1.89-0.39,2.86-0.39c0.97,0,1.95,0.13,2.86,0.39c2.19-1.49,3.15-1.18,3.15-1.18c0.62,1.58,0.23,2.75,0.11,3.04c0.73,0.8,1.18,1.83,1.18,3.09c0,4.44-2.69,5.42-5.25,5.7c0.41,0.35,0.78,1.04,0.78,2.11c0,1.53-0.01,2.76-0.01,3.13c0,0.31,0.21,0.68,0.8,0.56C20.71,21.39,24,17.08,24,12C24,5.73,18.27,0.5,12,0.5z"/>
-                                </svg>
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/rayhandestian/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <!-- Instagram SVG Icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                                    <path fill="#E4405F" d="M12,2.2c3.2,0,3.584,0.012,4.85,0.07c1.17,0.054,1.97,0.24,2.43,0.403c0.6,0.21,1.03,0.46,1.48,0.91c0.45,0.45,0.7,0.88,0.91,1.48c0.163,0.46,0.349,1.26,0.403,2.43c0.058,1.266,0.07,1.65,0.07,4.85s-0.012,3.584-0.07,4.85c-0.054,1.17-0.24,1.97-0.403,2.43c-0.21,0.6-0.46,1.03-0.91,1.48c-0.45,0.45-0.88,0.7-1.48,0.91c-0.46,0.163-1.26,0.349-2.43,0.403c-1.266,0.058-1.65,0.07-4.85,0.07s-3.584-0.012-4.85-0.07c-1.17-0.054-1.97-0.24-2.43-0.403c-0.6-0.21-1.03-0.46-1.48-0.91c-0.45-0.45-0.7-0.88-0.91-1.48c-0.163-0.46-0.349-1.26-0.403-2.43C2.212,15.584,2.2,15.2,2.2,12s0.012-3.584,0.07-4.85c0.054-1.17,0.24-1.97,0.403-2.43c0.21-0.6,0.46-1.03,0.91-1.48c0.45-0.45,0.88-0.7,1.48-0.91c0.46-0.163,1.26-0.349,2.43-0.403C8.416,2.212,8.8,2.2,12,2.2 M12,0C8.741,0,8.332,0.015,7.052,0.072C5.77,0.129,4.679,0.33,3.756,0.657C2.832,0.984,2.07,1.43,1.43,2.07C0.789,2.71,0.343,3.47,0.016,4.394C-0.311,5.318-0.512,6.409-0.569,7.69C-0.626,8.97-0.641,9.38-0.641,12s0.015,3.03,0.072,4.31c0.057,1.28,0.258,2.37,0.585,3.294c0.327,0.924,0.773,1.684,1.414,2.325c0.641,0.641,1.401,1.087,2.325,1.414c0.924,0.327,2.014,0.528,3.294,0.585C8.332,23.985,8.741,24,12,24s3.668-0.015,4.948-0.072c1.28-0.057,2.37-0.258,3.294-0.585c0.924-0.327,1.684-0.773,2.325-1.414c0.641-0.641,1.087-1.401,1.414-2.325c0.327-0.924,0.528-2.014,0.585-3.294C23.985,15.668,24,15.259,24,12s-0.015-3.668-0.072-4.948c-0.057-1.28-0.258-2.37-0.585-3.294c-0.327-0.924-0.773-1.684-1.414-2.325c-0.641-0.641-1.401-1.087-2.325-1.414c-0.924-0.327-2.014-0.528-3.294-0.585C15.668,0.015,15.259,0,12,0L12,0z"/>
-                                    <path fill="#E4405F" d="M12,5.838c-3.403,0-6.162,2.76-6.162,6.162S8.597,18.162,12,18.162S18.162,15.402,18.162,12S15.403,5.838,12,5.838z M12,16.324c-2.058,0-3.662-1.605-3.662-3.662S9.942,8,12,8s3.662,1.605,3.662,3.662S14.058,16.324,12,16.324z"/>
-                                    <circle fill="#E4405F" cx="18.406" cy="5.594" r="1.44"/>
-                                </svg>
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rayhan-destian-885720333/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <!-- LinkedIn SVG Icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                                    <path fill="#0077B5" d="M22.23,0H1.77C0.79,0,0,0.77,0,1.72v20.56C0,23.23,0.79,24,1.77,24h20.46C23.21,24,24,23.23,24,22.28V1.72C24,0.77,23.21,0,22.23,0z M7.09,20.45H3.56V9h3.53V20.45z M5.32,7.62c-1.14,0-2.07-0.93-2.07-2.07c0-1.14,0.93-2.07,2.07-2.07c1.14,0,2.07,0.93,2.07,2.07C7.39,6.69,6.46,7.62,5.32,7.62z M20.45,20.45h-3.53v-5.4c0-1.29-0.02-2.95-1.8-2.95c-1.8,0-2.07,1.4-2.07,2.84v5.51h-3.53V9h3.39v1.56h0.05c0.47-0.89,1.62-1.83,3.34-1.83c3.58,0,4.24,2.36,4.24,5.43V20.45z"/>
-                                </svg>
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+         </nav>
+      </header>
+      <!-- Main Content -->
+      <main class="space-y-8">
+         <!-- About Section -->
+         <section id="about" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300">
+            <div class="flex flex-col items-center">
+               <img src="assets/images/rayhan.jpg" alt="Rayhan Destian's Profile Picture" class="w-44 h-44 rounded-full object-cover shadow-md hover:scale-105 transition-transform duration-300">
+               <p class="mt-4 text-center text-lg text-gray-600">👨‍💻 Computer Science Student | Aspiring Game Developer | AI & Cyber Security Enthusiast</p>
+               <div class="mt-4">
+                  <ul class="flex gap-6">
+                     <li>
+                        <a href="https://github.com/rayhandestian" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition-colors duration-300">
+                           <!-- GitHub SVG Icon -->
+                           <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#333]">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                 <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                              </svg>
+                           </span>
+                           GitHub
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/rayhandestian/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+                           <!-- Instagram SVG Icon -->
+                           <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                 <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                              </svg>
+                           </span>
+                           Instagram
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.linkedin.com/in/rayhan-destian-885720333/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="flex items-center gap-2 text-gray-700 hover:text-blue-700 transition-colors duration-300">
+                           <!-- LinkedIn SVG Icon -->
+                           <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                 <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                              </svg>
+                           </span>
+                           LinkedIn
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </section>
-
-        <div class="side-by-side">
-            <section id="interests" class="card">
-                <h2>🚀 Interests</h2>
-                <ol>
-                    <li><strong>Game Development</strong>: Creating custom Minecraft servers and indie games.</li>
-                    <li><strong>AI & Machine Learning</strong>: Exploring AI's transformative impact across industries.</li>
-                    <li><strong>Cyber Security</strong>: Enhancing system security and ethical hacking.</li>
-                    <li><strong>Web Development</strong>: Building interactive and responsive websites.</li>
-                </ol>
+         </section>
+         <!-- Interests and Learning Sections Side by Side -->
+         <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Interests Section -->
+            <section id="interests" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300 flex-1">
+               <h2 class="text-2xl font-semibold mb-4 text-gray-800">🚀 Interests</h2>
+               <ol class="list-decimal list-inside space-y-2">
+                  <li><strong>Game Development</strong>: Creating custom Minecraft servers and indie games.</li>
+                  <li><strong>AI & Machine Learning</strong>: Exploring AI's transformative impact across industries.</li>
+                  <li><strong>Cyber Security</strong>: Enhancing system security and ethical hacking.</li>
+                  <li><strong>Web Development</strong>: Building interactive and responsive websites.</li>
+               </ol>
             </section>
-
-            <section id="learning" class="card">
-                <h2>🌱 What I'm Learning</h2>
-                <ul>
-                    <li>📦 Currently learning <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>MongoDB</strong></li>
-                    <li>🌐 Exploring <strong>Web Development</strong> and enhancing my skills with <strong>HTML, CSS</strong>, and <strong>JavaScript</strong></li>
-                </ul>
+            <!-- Learning Section -->
+            <section id="learning" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300 flex-1">
+               <h2 class="text-2xl font-semibold mb-4 text-gray-800">🌱 What I'm Learning</h2>
+               <ul class="list-disc list-inside space-y-2">
+                  <li>📦 Currently learning <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>MongoDB</strong></li>
+                  <li>🌐 Exploring <strong>Web Development</strong> and enhancing my skills with <strong>HTML, CSS</strong>, and <strong>JavaScript</strong></li>
+               </ul>
             </section>
-        </div>
-
-        <section id="skills" class="card">
-            <h2>💻 Tech Stack</h2>
-            <div class="tech-stack-grid">
-                <div class="tech-category">
-                    <h3>Beginner</h3>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=python&logoColor=white" alt="Python Badge">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=black" alt="JavaScript Badge">
-                        <img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=mongodb&logoColor=white" alt="MongoDB Badge">
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h3>Basic</h3>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/C++-00599C.svg?style=flat&logo=c%2B%2B&logoColor=white" alt="C++ Badge">
-                        <img src="https://img.shields.io/badge/Java-007396.svg?style=flat&logo=java&logoColor=white" alt="Java Badge">
-                        <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white" alt="CSS3 Badge">
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h3>Intermediate</h3>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat&logo=mysql&logoColor=white" alt="MySQL Badge">
-                        <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML5 Badge">
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h3>Advanced</h3>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/Skript-1E90FF.svg?style=flat&logo=Skript&logoColor=white" alt="Skript Badge">
-                    </div>
-                </div>
+         </div>
+         <!-- Tech Stack Section -->
+         <section id="skills" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">💻 Tech Stack</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+               <!-- Beginner -->
+               <div>
+                  <h3 class="text-xl font-medium mb-4 text-gray-700 text-center">Beginner</h3>
+                  <div class="flex flex-wrap justify-center gap-4">
+                     <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=python&logoColor=white" alt="Python Badge" class="h-7">
+                     <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=black" alt="JavaScript Badge" class="h-7">
+                     <img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=mongodb&logoColor=white" alt="MongoDB Badge" class="h-7">
+                  </div>
+               </div>
+               <!-- Basic -->
+               <div>
+                  <h3 class="text-xl font-medium mb-4 text-gray-700 text-center">Basic</h3>
+                  <div class="flex flex-wrap justify-center gap-4">
+                     <img src="https://img.shields.io/badge/C++-00599C.svg?style=flat&logo=c%2B%2B&logoColor=white" alt="C++ Badge" class="h-7">
+                     <img src="https://img.shields.io/badge/Java-007396.svg?style=flat&logo=java&logoColor=white" alt="Java Badge" class="h-7">
+                     <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white" alt="CSS3 Badge" class="h-7">
+                  </div>
+               </div>
+               <!-- Intermediate -->
+               <div>
+                  <h3 class="text-xl font-medium mb-4 text-gray-700 text-center">Intermediate</h3>
+                  <div class="flex flex-wrap justify-center gap-4">
+                     <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat&logo=mysql&logoColor=white" alt="MySQL Badge" class="h-7">
+                     <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML5 Badge" class="h-7">
+                  </div>
+               </div>
+               <!-- Advanced -->
+               <div>
+                  <h3 class="text-xl font-medium mb-4 text-gray-700 text-center">Advanced</h3>
+                  <div class="flex flex-wrap justify-center gap-4">
+                     <img src="https://img.shields.io/badge/Skript-1E90FF.svg?style=flat&logo=Skript&logoColor=white" alt="Skript Badge" class="h-7">
+                  </div>
+               </div>
             </div>
-        </section>
-
-        <div class="side-by-side">
-            <section id="bonus" class="card">
-                <h2>🎉 Bonus!</h2>
-                <div>
-                    <p>Watch my favorite video on my favorite channel!</p>
-                    <iframe width="511" height="287" src="https://www.youtube.com/embed/2k8AIzE87Mo" title="Disney Medley｜covered by 戌亥とこ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+         </section>
+         <!-- Bonus and Contact Sections Side by Side -->
+         <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Bonus Section -->
+            <section id="bonus" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300 flex-1">
+               <h2 class="text-2xl font-semibold mb-4 text-gray-800">🎉 Bonus!</h2>
+               <div class="flex flex-col items-center">
+                  <p class="mb-4">Watch my favorite video on my favorite channel!</p>
+                  <div class="w-full max-w-xl">
+                     <iframe class="w-full h-60 sm:h-72 md:h-80 rounded-lg shadow-inner" src="https://www.youtube.com/embed/2k8AIzE87Mo" title="Disney Medley｜covered by 戌亥とこ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
             </section>
-    
-            <section id="contact" class="card">
-                <h2>📬 Get in Touch</h2>
-                <p>If you'd like to collaborate or just want to say hi, feel free to reach out!</p>
-                <form action="https://formspree.io/f/movqqylq" method="POST">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="_replyto" required>
-    
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Hello there!" required></textarea>
-    
-                    <label for="who-dropdown">I'm a ... ?*</label>
-                    <select id="who-dropdown" name="who-dropdown" required>
-                        <option value="student">Student</option>
-                        <option value="professional">Professional</option>
-                        <option value="business">Business</option>
-                        <option value="other">Other</option>
-                    </select>
-    
-                    <div class="checkbox">
-                        <input type="checkbox" id="spam-checkbox" name="spam-checkbox" value="true" required>
-                        <label for="spam-checkbox">I'm not sending you a spam*</label>
-                    </div>
-    
-                    <div class="checkbox">
-                        <input type="checkbox" id="love-message-checkbox" name="love-message-checkbox" value="true">
-                        <label for="love-message-checkbox">This is a love message</label>
-                    </div>
-    
-                    <button type="submit">Send Message</button>
-                </form>
+            <!-- Contact Section -->
+            <section id="contact" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300 flex-1">
+               <h2 class="text-2xl font-semibold mb-4 text-gray-800">📬 Get in Touch</h2>
+               <p class="mb-6">If you'd like to collaborate or just want to say hi, feel free to reach out!</p>
+               <form action="https://formspree.io/f/movqqylq" method="POST" class="space-y-4">
+                  <div>
+                     <label for="name" class="block text-sm font-bold mb-1">Name*</label>
+                     <input type="text" id="name" name="name" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                  </div>
+                  <div>
+                     <label for="email" class="block text-sm font-bold mb-1">Email*</label>
+                     <input type="email" id="email" name="_replyto" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                  </div>
+                  <div>
+                     <label for="message" class="block text-sm font-bold mb-1">Message*</label>
+                     <textarea id="message" name="message" rows="5" placeholder="Hello there!" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"></textarea>
+                  </div>
+                  <div>
+                     <label for="who-dropdown" class="block text-sm font-bold mb-1">I'm a ... ?*</label>
+                     <select id="who-dropdown" name="who-dropdown" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md bg-white appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,
+                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%233a4b5c">
+                        <path d="M2 4l4 4 4-4"/>
+                     </svg>
+                     ')] bg-no-repeat bg-right-3 focus:border-blue-500 focus:outline-none">
+                     <option value="student">Student</option>
+                     <option value="professional">Professional</option>
+                     <option value="business">Business</option>
+                     <option value="other">Other</option>
+                     </select>
+                  </div>
+                  <div class="flex items-center">
+                     <input type="checkbox" id="spam-checkbox" name="spam-checkbox" value="true" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                     <label for="spam-checkbox" class="ml-2 block text-sm">I'm not sending you a spam*</label>
+                  </div>
+                  <div class="flex items-center">
+                     <input type="checkbox" id="love-message-checkbox" name="love-message-checkbox" value="true" class="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded">
+                     <label for="love-message-checkbox" class="ml-2 block text-sm">This is a love message</label>
+                  </div>
+                  <button type="submit" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors duration-300 transform hover:-translate-y-0.5">
+                  Send Message
+                  </button>
+               </form>
             </section>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Rayhan Destian. All rights reserved.</p>
-        <div class="footer-social">
-            <a href="https://github.com/rayhandestian" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <!-- GitHub SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                    <path fill="#000000" d="M12,0.5C5.73,0.5,0.5,5.73,0.5,12c0,5.08,3.29,9.39,7.86,10.93c0.58,0.11,0.79-0.25,0.79-0.56c0-0.28-0.01-1.02-0.02-2.0c-3.19,0.7-3.87-1.54-3.87-1.54c-0.52-1.32-1.27-1.67-1.27-1.67c-1.04-0.71,0.08-0.7,0.08-0.7c1.15,0.08,1.75,1.18,1.75,1.18c1.02,1.75,2.68,1.24,3.33,0.95c0.1-0.74,0.4-1.24,0.73-1.53c-2.55-0.29-5.23-1.28-5.23-5.71c0-1.26,0.45-2.29,1.18-3.09c-0.12-0.29-0.51-1.46,0.11-3.04c0,0,0.96-0.31,3.15,1.18c0.91-0.26,1.89-0.39,2.86-0.39c0.97,0,1.95,0.13,2.86,0.39c2.19-1.49,3.15-1.18,3.15-1.18c0.62,1.58,0.23,2.75,0.11,3.04c0.73,0.8,1.18,1.83,1.18,3.09c0,4.44-2.69,5.42-5.25,5.7c0.41,0.35,0.78,1.04,0.78,2.11c0,1.53-0.01,2.76-0.01,3.13c0,0.31,0.21,0.68,0.8,0.56C20.71,21.39,24,17.08,24,12C24,5.73,18.27,0.5,12,0.5z"/>
-                </svg>
+         </div>
+      </main>
+      <!-- Footer Section -->
+      <footer class="text-center p-4 bg-white rounded-lg shadow-md mt-8">
+         <p class="text-sm text-gray-500">&copy; 2024 Rayhan Destian. All rights reserved.</p>
+         <div class="flex justify-center gap-6 mt-3">
+            <a href="https://github.com/rayhandestian" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-600 hover:text-black transition-colors duration-300">
+               <!-- GitHub SVG Icon -->
+               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#333]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                     <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg>
+               </span>
             </a>
-            <a href="https://www.instagram.com/rayhandestian/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <!-- Instagram SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                    <path fill="#E4405F" d="M12,2.2c3.2,0,3.584,0.012,4.85,0.07c1.17,0.054,1.97,0.24,2.43,0.403c0.6,0.21,1.03,0.46,1.48,0.91c0.45,0.45,0.7,0.88,0.91,1.48c0.163,0.46,0.349,1.26,0.403,2.43c0.058,1.266,0.07,1.65,0.07,4.85s-0.012,3.584-0.07,4.85c-0.054,1.17-0.24,1.97-0.403,2.43c-0.21,0.6-0.46,1.03-0.91,1.48c-0.45,0.45-0.88,0.7-1.48,0.91c-0.46,0.163-1.26,0.349-2.43,0.403c-1.266,0.058-1.65,0.07-4.85,0.07s-3.584-0.012-4.85-0.07c-1.17-0.054-1.97-0.24-2.43-0.403c-0.6-0.21-1.03-0.46-1.48-0.91c-0.45-0.45-0.7-0.88-0.91-1.48c-0.163-0.46-0.349-1.26-0.403-2.43C2.212,15.584,2.2,15.2,2.2,12s0.012-3.584,0.07-4.85c0.054-1.17,0.24-1.97,0.403-2.43c0.21-0.6,0.46-1.03,0.91-1.48c0.45-0.45,0.88-0.7,1.48-0.91c0.46-0.163,1.26-0.349,2.43-0.403C8.416,2.212,8.8,2.2,12,2.2 M12,0C8.741,0,8.332,0.015,7.052,0.072C5.77,0.129,4.679,0.33,3.756,0.657C2.832,0.984,2.07,1.43,1.43,2.07C0.789,2.71,0.343,3.47,0.016,4.394C-0.311,5.318-0.512,6.409-0.569,7.69C-0.626,8.97-0.641,9.38-0.641,12s0.015,3.03,0.072,4.31c0.057,1.28,0.258,2.37,0.585,3.294c0.327,0.924,0.773,1.684,1.414,2.325c0.641,0.641,1.401,1.087,2.325,1.414c0.924,0.327,2.014,0.528,3.294,0.585C8.332,23.985,8.741,24,12,24s3.668-0.015,4.948-0.072c1.28-0.057,2.37-0.258,3.294-0.585c0.924-0.327,1.684-0.773,2.325-1.414c0.641-0.641,1.087-1.401,1.414-2.325c0.327-0.924,0.528-2.014,0.585-3.294C23.985,15.668,24,15.259,24,12s-0.015-3.668-0.072-4.948c-0.057-1.28-0.258-2.37-0.585-3.294c-0.327-0.924-0.773-1.684-1.414-2.325c-0.641-0.641-1.401-1.087-2.325-1.414c-0.924-0.327-2.014-0.528-3.294-0.585C15.668,0.015,15.259,0,12,0L12,0z"/>
-                                    <path fill="#E4405F" d="M12,5.838c-3.403,0-6.162,2.76-6.162,6.162S8.597,18.162,12,18.162S18.162,15.402,18.162,12S15.403,5.838,12,5.838z M12,16.324c-2.058,0-3.662-1.605-3.662-3.662S9.942,8,12,8s3.662,1.605,3.662,3.662S14.058,16.324,12,16.324z"/>
-                                    <circle fill="#E4405F" cx="18.406" cy="5.594" r="1.44"/>
-                                </svg>
+            <a href="https://www.instagram.com/rayhandestian/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">
+               <!-- Instagram SVG Icon -->
+               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                     <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg>
+               </span>
             </a>
-            <a href="https://www.linkedin.com/in/rayhan-destian-885720333/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <!-- LinkedIn SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                    <path fill="#0077B5" d="M22.23,0H1.77C0.79,0,0,0.77,0,1.72v20.56C0,23.23,0.79,24,1.77,24h20.46C23.21,24,24,23.23,24,22.28V1.72C24,0.77,23.21,0,22.23,0z M7.09,20.45H3.56V9h3.53V20.45z M5.32,7.62c-1.14,0-2.07-0.93-2.07-2.07c0-1.14,0.93-2.07,2.07-2.07c1.14,0,2.07,0.93,2.07,2.07C7.39,6.69,6.46,7.62,5.32,7.62z M20.45,20.45h-3.53v-5.4c0-1.29-0.02-2.95-1.8-2.95c-1.8,0-2.07,1.4-2.07,2.84v5.51h-3.53V9h3.39v1.56h0.05c0.47-0.89,1.62-1.83,3.34-1.83c3.58,0,4.24,2.36,4.24,5.43V20.45z"/>
-                </svg>
+            <a href="https://www.linkedin.com/in/rayhan-destian-885720333/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">
+               <!-- LinkedIn SVG Icon -->
+               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                     <path
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                  </svg>
+               </span>
             </a>
-        </div>
-    </footer>
-</body>
+         </div>
+      </footer>
+   </body>
 </html>

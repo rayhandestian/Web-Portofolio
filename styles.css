@@ -299,6 +299,20 @@ main {
 }
 
 /* =======================
+   Side-by-Side Container using Flexbox
+   ======================= */
+
+.side-by-side {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px; /* Optional: Adds space below the side-by-side sections */
+}
+
+.side-by-side .card {
+    flex: 1;
+}
+
+/* =======================
    Footer Section
    ======================= */
 
@@ -337,12 +351,6 @@ footer {
    ======================= */
 
 @media (max-width: 992px) {
-    .profile-section {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -363,6 +371,15 @@ footer {
     .skills img {
         height: 23px;
     }
+
+    /* Adjust Flexbox layout to stack vertically */
+    .side-by-side {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Additional styles for tablets or medium screens if needed */
 }
 
 @media (max-width: 480px) {

@@ -156,36 +156,44 @@
             <section id="contact" class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform transition-shadow duration-300 flex-1">
                <h2 class="text-2xl font-semibold mb-4 text-gray-800">📬 Get in Touch</h2>
                <p class="mb-6">If you'd like to collaborate or just want to say hi, feel free to reach out!</p>
-               <form action="https://formspree.io/f/movqqylq" method="POST" class="space-y-4">
+               <form id="contact-form" action="https://formspree.io/f/movqqylq" method="POST" class="space-y-4">
                   <div>
                      <label for="name" class="block text-sm font-bold mb-1">Name*</label>
-                     <input type="text" id="name" name="name" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                     <input type="text" id="name" name="name" class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                     <div id="name-error" class="text-red-500 text-sm mt-1 hidden"></div>
                   </div>
                   <div>
                      <label for="email" class="block text-sm font-bold mb-1">Email*</label>
-                     <input type="email" id="email" name="_replyto" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                     <input type="email" id="email" name="_replyto" class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none">
+                     <div id="email-error" class="text-red-500 text-sm mt-1 hidden"></div>
                   </div>
                   <div>
                      <label for="message" class="block text-sm font-bold mb-1">Message*</label>
-                     <textarea id="message" name="message" rows="5" placeholder="Hello there!" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"></textarea>
+                     <textarea id="message" name="message" rows="5" placeholder="Hello there!" class="w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"></textarea>
+                     <div id="message-error" class="text-red-500 text-sm mt-1 hidden"></div>
                   </div>
                   <div>
                      <label for="who-dropdown" class="block text-sm font-bold mb-1">I'm a ... ?*</label>
-                     <select id="who-dropdown" name="who-dropdown" required class="w-full px-3 py-2 border-2 border-gray-300 rounded-md bg-white appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,
-                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%233a4b5c">
-                        <path d="M2 4l4 4 4-4"/>
-                     </svg>
-                     ')] bg-no-repeat bg-right-3 focus:border-blue-500 focus:outline-none">
-                     <option value="student">Student</option>
-                     <option value="professional">Professional</option>
-                     <option value="business">Business</option>
-                     <option value="other">Other</option>
+                     <select
+                       id="who-dropdown"
+                       name="who-dropdown"
+                       class="w-full px-3 py-2 border-2 border-gray-300 rounded-md bg-white appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 fill=%27%233a4b5c%27%3E%3Cpath d=%27M2 4l4 4 4-4%27/%3E%3C/svg%3E')] bg-no-repeat bg-right-3 bg-center-right focus:border-blue-500 focus:outline-none">
+                       <option value="" disabled selected>Choose something ...</option>
+                       <option value="student">Student</option>
+                       <option value="professional">Professional</option>
+                       <option value="business">Business</option>
+                       <option value="other">Other</option>
                      </select>
+                     <div id="who-dropdown-error" class="text-red-500 text-sm mt-1 hidden"></div>
+                   </div>
+                   <div class="flex flex-col items-start">
+                     <div class="flex items-center">
+                        <input type="checkbox" id="spam-checkbox" name="spam-checkbox" value="true" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label for="spam-checkbox" class="ml-2 block text-sm">I'm not sending you a spam*</label>
+                     </div>
+                     <div id="spam-checkbox-error" class="text-red-500 text-sm mt-1 hidden"></div>
                   </div>
-                  <div class="flex items-center">
-                     <input type="checkbox" id="spam-checkbox" name="spam-checkbox" value="true" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                     <label for="spam-checkbox" class="ml-2 block text-sm">I'm not sending you a spam*</label>
-                  </div>
+                  
                   <div class="flex items-center">
                      <input type="checkbox" id="love-message-checkbox" name="love-message-checkbox" value="true" class="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded">
                      <label for="love-message-checkbox" class="ml-2 block text-sm">This is a love message</label>
@@ -195,6 +203,7 @@
                   </button>
                </form>
             </section>
+            
          </div>
       </main>
       <!-- Footer Section -->
@@ -230,5 +239,6 @@
             </a>
          </div>
       </footer>
+      <script src="script.js"></script>
    </body>
 </html>
